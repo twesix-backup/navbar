@@ -10,7 +10,7 @@ module.exports.get=function(req,res)
             (
                 query.password&&
                 query.email&&
-                query.email.match(/[0-9a-zA-Z.\-_]@[0-9a-zA-Z\-_].[0-9a-zA-Z\-_]/)
+                query.email.match(/[0-9a-zA-Z.\-_]+@[0-9a-zA-Z\-_]+.[0-9a-zA-Z\-_]+/)
             )
     )
     {
@@ -62,7 +62,7 @@ module.exports.get=function(req,res)
                             .json
                             (
                                 {
-                                    status:'done_add_user',
+                                    status:'ok',
                                     message:'添加用户成功'
                                 }
                             )

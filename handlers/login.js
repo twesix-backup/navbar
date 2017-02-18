@@ -100,7 +100,7 @@ module.exports.get=function(req,res)
                                                     data:
                                                         {
                                                             uid:rows[0].uid,
-                                                            email:query.email,
+                                                            email:query.account,
                                                             access_token:reply
                                                         }
                                                 }
@@ -137,7 +137,7 @@ module.exports.get=function(req,res)
                                                             data:
                                                                 {
                                                                     uid:rows[0].uid,
-                                                                    email:query.email,
+                                                                    email:query.account,
                                                                     access_token:access_token
                                                                 }
                                                         }

@@ -9,7 +9,7 @@ module.exports.get=function(req,res)
         !
             (
                 query.email&&
-                query.email.match(/[0-9a-zA-Z.\-_]@[0-9a-zA-Z\-_].[0-9a-zA-Z\-_]/)
+                query.email.match(/[0-9a-zA-Z.\-_]+@[0-9a-zA-Z\-_]+.[0-9a-zA-Z\-_]+/)
             )
     )
     {
